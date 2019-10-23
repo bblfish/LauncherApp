@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Remote App</title>
+</head>
+<body>
+<script type="text/javascript" src="../target/scala-2.13/launcherapp-fastopt.js"></script>
+
+This is a remote App that is launched by the Launcher App.
+
+<script>
+    RemoteApp.start('This is the remote App');
+</script>
+
+<button onclick="RemoteApp.start('button clicked')"></button>
+
+</body>
+</html>

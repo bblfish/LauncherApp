@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Launcher App</title>
+</head>
+<body>
+<script type="text/javascript" src="../target/scala-2.13/launcherapp-fastopt.js"></script>
+<h2>Launcher App</h2>
+
+
+<h3>remote frame</h3>
+
+<iframe id="inlineFrameExample"
+        title="Inline Frame Example"
+        width="500"
+        height="200"
+        src="http://app.example/~hjs/LauncherApp/html/RemoteApp.html">
+</iframe>
+
+<script>
+    LauncherApp.start('This is the Launcher App')
+</script>
+
+<p>
+  Remote App location:
+<input id="RemoteAppUrl" type="url" value="http://app.example/~hjs/LauncherApp/html/RemoteApp.html" size="70" required/>
+</p>
+<p>
+<button onclick="LauncherApp.reloadIFrame()">Reload iFrame with content at location</button>
+<button onclick="LauncherApp.openRemoteApp()">Open Remote app in new Frame.</button>
+</p>
+</body>
+</html>
