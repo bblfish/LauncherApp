@@ -4,6 +4,25 @@ This is project to test the viability of [The Launcher App Proposal](https://git
 
 It does not implement the features that Window.postMessage would need to be really secure. At present I just wanted to test that a window from two origins can communicate.
 
+## Conclusion
+
+Window.postMessage does indeed allow messages to be sent between apps from different origins, if those are opened by the Launcher App. Furthermore this works when the Launcher App opens those apps in
+* an IFrame
+* a new tab
+* a new browser window
+
+## Todo
+ 
+Immediate todos: 
+ 
+* Test on a number of browsers and OSes.
+* Improve the security of communication
+* Add code for Launcher to send messages back to launched apps, and check those works.
+
+Longer term todos:
+
+* Test how much the Launcher App can control HTTP connections
+
 ## Setup
 
 To get this working one needs to start a web server Apache on localhost to respond to requests from different origins.
