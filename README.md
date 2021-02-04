@@ -1,6 +1,6 @@
 # Launcher App
 
-This is project to test the viability of [The Launcher App Proposal](https://github.com/solid/authorization-and-access-control-panel/blob/master/Proposals/LauncherApp.md). It checks that one can use [Window.postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) to send messages between pages of different origins.
+This is project to test the viability of [The Launcher App Proposal](https://github.com/solid/authorization-panel/blob/master/proposals/LauncherApp.md). It checks that one can use [Window.postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) to send messages between pages of different origins.
 
 It does not implement the features that Window.postMessage would need to be really secure. At present I just wanted to test that a window from two origins can communicate.
 
